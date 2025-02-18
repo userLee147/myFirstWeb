@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./productadd.css" />
+  </head>
+
+  <body>
+    <script src="./productmain.js"></script>
+    <div class="wrapper">
+      <header class="header">
+        <div id="head1">
+          <a href="">
+            <img id="header_logo" src="./img/로고.png" alt="로고" />
+            <span>FreshFarm</span>
+          </a>
+        </div>
+        <div id="head2">
+          <button id="head_btn1" onclick="info()">
+            <a href="">
+              <img src="./img/info_green.png" alt="느낌표" />
+              로그아웃
+              <img src="./img/right_small.png" alt="화살표" />
+            </a>
+          </button>
+          <button id="head_btn2">
+            <a href="">
+              <img src="./img/info_green.png" alt="느낌표" />사용 가이드
+            </a>
+          </button>
+          <img src="./img/bell.png " alt="" />
+          <img src="./img/user.png " alt="" />
+        </div>
+      </header>
+
+      <main class="main">
+        <nav id="nav">
+          <ul>
+            <li id="nav0">
+              <a href="./productmain.html">
+                <img id="logo" src="./img/로고.png" alt="나뭇잎" />
+                FreshFarm
+              </a>
+            </li>
+            <li>
+              <a id="link" href="./productadd copy.html"
+                ><img id="item" src="./img/item2.png" alt="나뭇잎" />상품등록</a
+              >
+
+            </li>
+            <li>
+              <a id="link" href="./productadd copy.html"
+                ><img id="item" src="./img/plus.png" alt="나뭇잎" />상품목록</a
+              >
+
+            </li>
+            <li>
+              <a id="input" href="">
+                <img id="input_item" src="./img/입고.png" alt="나뭇잎" />입고</a
+              >
+            </li>
+            <li>
+              <a id="output" href=""
+                ><img
+                  id="output_item"
+                  src="./img/출고.png"
+                  alt="나뭇잎"
+                />출고</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="content">
+          <section id="main-section1">
+            <div id="section1_1">
+              <div>
+                <p>상품등록</p>
+                <p>상품 추가</p>
+              </div>
+            </div>
+
+            <div id="section1_2">
+              <button type="submit" id="section1_2_btn1">상품추가</button>
+            </div>
+          </section>
+          <section id="main-section2">
+            <div id="section2_1">
+              <form id="item_info" name="item_info" action="">
+                <div><p>상품 정보</p></div>
+                <div class="items">
+                  <div id="new_item">
+                    <div class="skinTypeCheck">
+                      <p>상품 속성</p>
+                      <ul>
+                        <li>
+                          <input
+                            type="radio"
+                            value="kind01"
+                            name="kind"
+                            id="vegatable"
+                          />
+                          <label for="vegatable">야 채</label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            value="kind02"
+                            name="kind"
+                            id="fruit"
+                          />
+                          <label for="fruit">과 일</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p>상품 이름</p>
+                      <input type="name" />
+                    </div>
+                    <div>
+                      <p>구매 가격</p>
+                      <input type="text" />
+                    </div>
+
+                    <div>
+                      <p>상품 수량</p>
+                      <input type="text" value="0" />
+                    </div>
+                  </div>
+                  <label for="file">
+                    <div class="btn-upload"></div>
+                  </label>
+                  <input type="file" name="file" id="file" />
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

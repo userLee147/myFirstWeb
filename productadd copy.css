@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body,
+.wrapper {
+  min-width: 100vh;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+button {
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid gainsboro;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+}
+#head1 > a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header > #head1 > a > img {
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin: 20px;
+}
+.header > #head1 > a > span {
+  font-size: 30px;
+}
+
+#head2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 50px;
+}
+#head2 > button {
+  border-radius: 20px;
+  width: 150px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#head2 > button > a > img {
+  width: 20px;
+  height: 20px;
+  margin: auto 5px;
+}
+
+#head_btn1 > a > :nth-child(2) {
+  width: 8px;
+  height: 12px;
+}
+
+#head2 > button > a {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+}
+
+.header > #head2 > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+/* main content(큰틀) */
+
+.main {
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+}
+
+/* nav */
+nav {
+  font-size: 20px;
+  background-color: rgb(236, 238, 238);
+}
+.main > nav {
+  width: 20%;
+  height: 100%;
+}
+nav > ul {
+  width: 100%;
+  height: 100%;
+}
+#nav0 {
+  height: 100px;
+  background-color: #3cb79d;
+}
+
+nav > ul > li {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+
+nav ul li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 5pz;
+}
+
+nav > ul > li:nth-child(3) {
+  display: none;
+}
+
+nav > ul > li:nth-child(2):hover+li:nth-child(3) { 
+  display: block;
+}
+nav > ul > li:nth-child(3):hover { 
+  display: block;
+}
+
+
+#logo {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul > li > a img {
+  width: 20px;
+  height: 20px;
+  margin: auto 20px;
+}
+
+nav ul > li:hover > a {
+  color: #3cb79d;
+  background-color: #ffe699ab;
+  border-radius: 10px;
+}
+
+/* content */
+.main > .content {
+  width: 75%;
+  margin: 0 auto;
+  height: calc(100vh - 120px);
+}
+#main-section1 {
+  height: 150px;
+  display: flex;
+  border-bottom: 1px solid gainsboro;
+}
+/* 메인 타이들 */
+#section1_1 {
+  width: 100%;
+}
+#section1_1 > div {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section1_1 > div > p:nth-child(1) {
+  font-size: 15px;
+  color: gray;
+}
+#section1_1 > div > p:nth-child(2) {
+  font-size: 30px;
+}
+
+/* 초기화 버튼 */
+#section1_2 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#section1_2_btn1 {
+  background-color: white;
+  border: 1px solid gainsboro;
+  text-align: center;
+  gap: 10px;
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+#section2_1 {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* 상품정보입력 */
+
+.main-section2 {
+  height: calc(100% - 150px);
+  width: 40%;
+}
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.section2_1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+}
+.section2_1 > img {
+  margin: auto 0;
+  width: 10px;
+  height: 15px;
+}
+.items > li > div {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.section2_2 {
+  height: inherit;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+
+table {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.ti > td {
+  width: 20%;
+}
+
+.ti > td:nth-child(1) > img {
+  display: block;
+  width: 80px;
+}
+.ti > :nth-child(4) > img {
+  width: 10px;
+  height: 15px;
+}
+
+.ti > :nth-child(2),
+.ti > :nth-child(3) {
+  width: 30%;
+  vertical-align: bottom;
+  font-size: 20px;
+  color: black;
+}
